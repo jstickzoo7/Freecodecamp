@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    background-color: lightblue;
+    font-family:'Poppins', sans-serif;
+    font-weight: 400;
+    
+}
+
+#survey-form{
+    width: 500px;
+    margin: auto;
+    color: white;
+    font-size: 20px;
+    
+}
+label{
+    display: block;
+}
+.checkbox ~ label{
+    display: inline-block;
+    font-weight: inherit;
+    font-family: inherit;
+}
+#title{
+    text-align: center;
+    margin-bottom: 0;
+}
+#description{
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+    
+}
+fieldset{
+    font-weight: lighter;
+    padding: 40px;
+    background-color: #03002e;
+    border-radius: 0.25em;
+}
+
+.demo > input, select{
+    width: 100%;
+    margin: 10px 0 20px  0;
+    border:1px solid #03002e;
+    padding: 12px 12px;
+    border-radius: 0.25em;
+    box-sizing: border-box;
+}
+input[type="checkbox"]{
+    margin-right: 10px;
+    font-weight: inherit;
+    font-family: inherit;
+    display: inline-block;
+    font-size: 50px;
+}
+
+input[type="submit"]{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: large;
+    border-radius: 5px;
+    background-color: #329932;
+}
+textarea{
+    border:1px solid #03002e;
+    padding: 12px 10px;
+    border-radius: 0.25em;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 15px;
+    margin-top: -10px;
+}
+p{
+    margin-top: 20px;
+}
+#dropdown{
+    margin-bottom: -5px;
+}
+.sp-paragraph{
+    margin-top: 50px;
+    margin-bottom:0;
+  
+}
