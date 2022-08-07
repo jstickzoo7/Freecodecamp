@@ -15,8 +15,7 @@ html{
 #user_mail_reg,
 #Features,
 #pricing,
-#how_it_works,
-#footer{
+#how_it_works{
     grid-column: 2 /3;
     max-width: 80vw;
 }
@@ -29,12 +28,9 @@ html{
     position: sticky;
     top: 0;
     background-color: #b4b3b3;
+    z-index: 1;
 }
-#nav-bar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+
 .nav-link li {
     display: inline-block;
     list-style: none;
@@ -229,6 +225,7 @@ iframe{
     font-size: 1.6rem;
     position: absolute;
     bottom: 30px;
+    background-color: #f7cc21;
 }
 /* End of pricing */
 
@@ -248,11 +245,14 @@ iframe{
 
 .fot-link li {
     list-style: none;
+    display: inline-block;
 }
 .fot-link li a{
     color: black;
     font-size: 1.5rem;
     padding: 0 5px;
+    text-decoration: none;
+    margin: 5px 0;
 }
 
 #copyright{
@@ -264,7 +264,7 @@ iframe{
     
 }
 /*End of footer  */
-@media (max-width:480px) {
+@media only screen and  (max-width:480px) {
     body{
         width: 100vw;
     }
@@ -295,6 +295,10 @@ iframe{
         word-wrap: normal;
     }
 }
-@media (max-width:768px) {
-    
+@media only screen and (max-width:768px) {
+    #nav-bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
