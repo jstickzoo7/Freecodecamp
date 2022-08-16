@@ -19,6 +19,7 @@ html{
     grid-column: 2 /3;
     max-width: 80vw;
 }
+
 /* End of general style */
 
 /*Header  */
@@ -33,10 +34,14 @@ html{
 
 #nav-bar{
     display: flex;
+    flex-direction: row;
+    align-items: center;
+
 }
 .logo{
-    margin-right: auto;
     display: block;
+    margin-right: auto;
+
 }
 .nav-link li {
     display: inline-block;
@@ -80,19 +85,20 @@ main{
 #user_mail_reg{
     display: flex;
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     margin: 2rem;
-    /* border: 2px solid black; */
 }
 h1{
     font-size: 3rem;
 }
 input[type="email"]{
-    padding: 6px 5px;
-    width: 35%;
+    padding: 7px 5px;
+    width: 100%;
 }
 input[type="email"]:focus{
     border: 2px solid black;
+   
 }
 input[type="submit"]{
   display: block;
@@ -272,7 +278,7 @@ iframe{
     
 }
 /*End of footer  */
-/* @media only screen and  (max-width:480px) {
+@media  (min-width:1px) and (max-width:600px) {
     body{
         width: 100vw;
     }
@@ -290,7 +296,7 @@ iframe{
     margin-right: 0;
    }
         
-    }
+    
     .logo h2{
         font-size: 2.5rem;
     }
@@ -307,6 +313,25 @@ iframe{
     }
     .products{
      width: 50vw;
-        word-wrap: normal;
+     word-wrap: normal;
     }
- */
+}
+@media(min-width:601px) and (max-width:780px){
+.nav-link{
+    display: flex;
+}
+.nav-link li a{
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding: 10px 0px 10px 10px;
+    text-decoration: none;
+}
+.p_contianer{
+    flex-direction: column;
+    align-items: center;
+
+}
+.products{
+    width: 50%;
+}
+}
