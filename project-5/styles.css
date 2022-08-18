@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Lato:wght@100;300;400;700&family=Poppins:wght@100;300;500&family=Raleway:ital,wght@0,200;0,400;0,700;1,100;1,200&display=swap');
+
+:root{
+    --main-white:#f0f0f0;
+    --main-blue:#45567D;
+    --main-red:#be3144;
+    --main-gray:#303841;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+    font-family: Raleway,sans-serif;
+    text-align: center;
+}
+.grid-projects figure{
+    margin: 0;
+}
+/* nav bar */
+nav{
+    width: 100%;
+    background-color: var(--main-red);
+    position: sticky;
+    top: 0;
+    padding-right: 2%;
+    border-bottom: 2px solid black;
+    
+}
+.nav-link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-end;
+}
+.nav-link li a{
+   text-decoration: none;
+    color: var(--main-white);
+    font-size: 2.5em;
+    font-weight: 400;
+    cursor: pointer;
+}
+.nav-link li{
+    list-style:none;
+    display: inline-block;
+    padding: 2em 1.2em;
+}
+.nav-link li:hover{
+    background-color: var(--main-blue);
+}
+/* End of nav bar */
+
+
+/* welcome section */
+#welcome-section{
+    height: 90vh;
+    width: 100%;
+    background-color:var(--main-gray);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.description{
+    width: fit-content;
+    padding:1em ;
+}
+.description h1{
+    font-size: 5em;
+    color: white;
+}
+#welcome-section p{
+    color: crimson;
+    font-size: 2.5em;
+    font-style:italic ;
+    text-align: center;
+}
+/* End of welcome section */
+
+/* projects */
+#projects{
+    background-color: var(--main-blue);
+    padding: 9rem 0;
+    height: fit-content;
+    width: 100vw;
+}
+ .projects-heading{
+    width: fit-content;
+    margin: 0 auto;
+    border-bottom:3px solid var(--main-white);
+    font-size: 4em;
+    color: var(--main-white);
+    padding-bottom:.2em;
+    max-width: 640px;
+    padding: 0 auto;
+    margin-bottom: 1.5em;  
+}
+.grid-projects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 15px;
+    align-items: stretch;
+    justify-content: center;
+    max-width: 100%;
+    padding: 0 1em;
+}
+.project-tile{
+    position: relative;
+
+}
+.project-tile img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .3);
+    
+}
+.project-tile p{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: var(--main-gray);
+    color: var(--main-white);
+    font-size: 2em;
+    font-weight: 400;
+    padding: 11px;
+}
