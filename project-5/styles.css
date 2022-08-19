@@ -16,10 +16,9 @@ html{
     font-size: 10px;
     font-family: Raleway,sans-serif;
     text-align: center;
+    color: var(--main-white);
 }
-.grid-projects figure{
-    margin: 0;
-}
+
 /* nav bar */
 nav{
     width: 100%;
@@ -74,19 +73,21 @@ nav{
     color: white;
 }
 #welcome-section p{
-    color: crimson;
+    color: var(--main-red);
     font-size: 2.5em;
     font-style:italic ;
+    font-weight: 300;
     text-align: center;
+
 }
 /* End of welcome section */
 
 /* projects */
 #projects{
-    background-color: var(--main-blue);
+    background: var(--main-blue);
     padding: 9rem 0;
-    height: fit-content;
-    width: 100vw;
+    max-width: 100%;
+
 }
  .projects-heading{
     width: fit-content;
@@ -124,10 +125,89 @@ nav{
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 50px;
+    height: 70px;
     background-color: var(--main-gray);
     color: var(--main-white);
     font-size: 2em;
     font-weight: 400;
-    padding: 11px;
+    padding: 20px;
 }
+.show-all-btn{
+    margin-top: 50px;
+    padding: 10px 20px;
+    background-color: var(--main-gray);
+    border: none;
+}
+.show-all-btn a{
+    font-size: 1.7em;
+    font-weight: 300;
+    text-decoration: none;
+    color: var(--main-white);
+}
+.fa-chevron-right{
+    font-size: .8em;
+}
+/* End of projects */
+
+/* contacts */
+#profile-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: var(--main-white);
+    background-color: var(--main-gray);
+}
+
+.captions h2{
+    font-size: 5.5em;
+}
+.captions p{
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 10px;
+}
+.contacts{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 6em;
+    flex-wrap:wrap ;
+}
+.contacts a{
+    display: block;
+    padding: 10px 20px;
+    color: var(--main-white);
+    font-size: 2.7em;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+
+}
+.contacts .fa{
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+/* End of contacts */
+
+/* footer */
+.footnote{
+    background-color: var(--main-red);
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+footer a{
+    text-decoration: none;
+    font-size: 2em;
+    margin-right: 30px;
+    color:var(--main-white) ;
+   
+}
+.footnote .fa {
+    margin-right: 5px;
+}
+/* End of footer */
