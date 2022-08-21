@@ -17,6 +17,7 @@ html{
     font-family: Raleway,sans-serif;
     text-align: center;
     color: var(--main-white);
+    min-width: 300px;
 }
 
 /* nav bar */
@@ -130,7 +131,10 @@ nav{
     color: var(--main-white);
     font-size: 2em;
     font-weight: 400;
+    word-wrap: break-word;
+    overflow: hidden;
     padding: 20px;
+
 }
 .show-all-btn{
     margin-top: 50px;
@@ -193,11 +197,12 @@ nav{
 
 /* footer */
 .footnote{
-    background-color: var(--main-red);
-    height: 20vh;
+    background-color: var(--main-gray);
+    height: 10vh;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    border-top: 2px solid var(--main-red);
 
 }
 footer a{
@@ -205,6 +210,7 @@ footer a{
     font-size: 2em;
     margin-right: 30px;
     color:var(--main-white) ;
+
    
 }
 .footnote .fa {
